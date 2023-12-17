@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+	<title>Remove</title>
+</head>
+
+<body class = "rembody">
+	<h1>Remove from DataBase</h1>
+	<form action="/remove" method="post">
+        <input type="submit" value="Remove" name="submit"/>
+	</form>
+    <hr>
+	<a href="/">HOME</a>
+
+<script>
+    window.onsubmit = main; 
+    function main(){           
+        let value = "Are you sure you want to remove all input?";
+        if (confirm(value) == true){
+            return true;
+        }else{
+            return false;
+        }
+    }
+</script>
+</body>
+</html>

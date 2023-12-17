@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body class = "userBody">
+	<form action="/user" method="post">
+		<h2>Add your favorite Pokemon</h2>
+	
+		<label><strong>Username:</strong><input id = "username" type="text" placeholder="Username" name="username"/></label> 		
+		<label><strong>Favorite Pokemon:</strong><input id = "favoritePokemon" type="text" placeholder="Favorite Pokemon" name="favoritePokemon"/></label>
+		<input id = "submit_user" type="submit" value="Submit" name="submit_user"/>
+	</form>
+	<br>
+	<br><br>
+	<ul>
+		<li>To go to homepage <a href="/">Home </a></li>
+	</ul>
+	
+</body>
+
+<script>
+	window.onsubmit = main;
+	function main(){     
+		let value = "Are you sure you want to submit your application?";
+		if (confirm(value) == true){
+			return true;
+		}else{
+			return false;
+		}
+	}
+</script>
+</html>
